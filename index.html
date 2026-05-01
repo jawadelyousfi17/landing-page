@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DHL — Delivered. Worldwide.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- ambient glow -->
+  <div class="ambient" aria-hidden="true"></div>
+
+  <!-- NAV -->
+  <header class="nav card-thin">
+    <a class="brand" href="#">
+      <span class="brand-mark">DHL</span>
+      <span class="brand-bar"></span>
+    </a>
+    <nav class="nav-links">
+      <a href="#shipping">Shipping</a>
+      <a href="#tracking">Tracking</a>
+      <a href="#business">Business</a>
+      <a href="#support">Support</a>
+    </nav>
+    <div class="nav-cta">
+      <button class="pill ghost">Sign in</button>
+      <button class="pill">Track a parcel <span class="arrow">›</span></button>
+    </div>
+  </header>
+
+  <main>
+   <div class="page">
+    <!-- HERO CARD -->
+    <section class="card hero-card">
+      <div class="card-glow"></div>
+      <div class="kicker"><span class="dot"></span> Excellence. Simply delivered.</div>
+      <h1 class="display">
+        Moving the world<br />
+        <span class="accent">forward.</span>
+      </h1>
+      <p class="lede">
+        From the next street to the next continent — over 220 countries, one promise.
+        Watch your parcel travel as you scroll.
+      </p>
+      <div class="hero-actions">
+        <button class="pill lg">Let's talk <span class="arrow">›</span></button>
+        <button class="pill ghost lg">Learn more</button>
+      </div>
+      <div class="hero-meta">
+        <div><span class="meta-num">220+</span><span class="meta-lbl">Countries</span></div>
+        <div class="vline"></div>
+        <div><span class="meta-num">24/7</span><span class="meta-lbl">Tracking</span></div>
+        <div class="vline"></div>
+        <div><span class="meta-num">1.8B</span><span class="meta-lbl">Parcels / yr</span></div>
+      </div>
+    </section>
+   </div>
+
+    <!-- SCROLL SCENE (full-bleed) -->
+    <section class="scroll-scene">
+      <div class="sticky">
+        <canvas id="frames"></canvas>
+
+        <!-- Top-left -->
+        <div class="overlay-card tl" data-start="0.0" data-end="0.35">
+          <div class="card-glow"></div>
+          <span class="kicker"><span class="dot"></span> Step 01 — Pickup</span>
+          <h2>From your door.</h2>
+          <p>Schedule a pickup in seconds. We collect from 220+ countries and territories.</p>
+        </div>
+
+        <!-- Top-right -->
+        <div class="overlay-card tr" data-start="0.25" data-end="0.6">
+          <div class="card-glow"></div>
+          <span class="kicker"><span class="dot"></span> Step 02 — In transit</span>
+          <h2>On the move.</h2>
+          <p>Real-time tracking, 24/7 — sorting hubs, long-haul road and air, all visible.</p>
+        </div>
+
+        <!-- Bottom-left -->
+        <div class="overlay-card bl" data-start="0.5" data-end="0.85">
+          <div class="card-glow"></div>
+          <span class="kicker"><span class="dot"></span> Step 03 — Last mile</span>
+          <h2>Through every city.</h2>
+          <p>Hybrid fleets and local couriers. Fewer emissions, faster doorstep arrivals.</p>
+        </div>
+
+        <!-- Bottom-right -->
+        <div class="overlay-card br" data-start="0.75" data-end="1.0">
+          <div class="card-glow"></div>
+          <span class="kicker"><span class="dot"></span> Step 04 — Delivered</span>
+          <h2>To their hands.</h2>
+          <p>Signed, photographed, confirmed. Peace of mind, every time.</p>
+        </div>
+
+        <!-- Route progress -->
+        <div class="route">
+          <div class="route-track"><div class="route-fill" id="routeFill"></div></div>
+          <div class="route-labels">
+            <span>Pickup</span><span>Transit</span><span>Last mile</span><span>Delivered</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+   <div class="page">
+    <!-- BRAND / SUPPORT CARD ROW -->
+    <section class="row">
+      <div class="card brand-card">
+        <div class="card-glow"></div>
+        <div class="brand-row">
+          <div class="brand-tile">
+            <span class="tile-lbl">Logo</span>
+            <div class="tile-content">
+              <span class="brand-mark">DHL</span>
+              <span class="brand-bar"></span>
+            </div>
+          </div>
+          <div class="brand-tile">
+            <span class="tile-lbl">Type</span>
+            <div class="tile-content type-sample">Aa Bb</div>
+          </div>
+        </div>
+        <div class="palette">
+          <span style="--c:#1a1a1a"></span>
+          <span style="--c:#3a3a3a"></span>
+          <span style="--c:#7a6800"></span>
+          <span style="--c:#b89400"></span>
+          <span style="--c:#e6b800"></span>
+          <span style="--c:#ffcc00"></span>
+          <span style="--c:#ffe066"></span>
+        </div>
+      </div>
+
+      <div class="card support-card">
+        <div class="card-glow"></div>
+        <h3>Full project support</h3>
+        <p>
+          Have a shipment but don't know where to start? No problem — our team
+          handles pickup, customs, transit, and last-mile, all in one place.
+        </p>
+        <button class="pill big-cta">Support</button>
+      </div>
+    </section>
+
+    <!-- STATS CARD -->
+    <section class="card stats-card">
+      <div class="card-glow"></div>
+      <h3 class="display sm">A network at <span class="accent">global scale.</span></h3>
+      <div class="stats-grid">
+        <div class="stat">
+          <div class="num">220+</div>
+          <div class="lbl">Countries &amp; territories</div>
+        </div>
+        <div class="stat">
+          <div class="num">1.8B</div>
+          <div class="lbl">Parcels / year</div>
+        </div>
+        <div class="stat">
+          <div class="num">600K</div>
+          <div class="lbl">People on the road</div>
+        </div>
+        <div class="stat">
+          <div class="num">0</div>
+          <div class="lbl">Net emissions by 2050</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRACK CTA CARD -->
+    <section class="card cta-card">
+      <div class="card-glow"></div>
+      <span class="kicker"><span class="dot"></span> Track</span>
+      <h3 class="display sm">Ship smarter, today.</h3>
+      <p class="lede">Create a label, book a pickup, and track every step — in one place.</p>
+      <div class="cta-row">
+        <input type="text" placeholder="Enter tracking number" />
+        <button class="pill">Track <span class="arrow">›</span></button>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="card foot-card">
+      <div class="card-glow"></div>
+      <div class="foot-grid">
+        <div>
+          <div class="brand">
+            <span class="brand-mark">DHL</span>
+            <span class="brand-bar"></span>
+          </div>
+          <p class="muted">Excellence. Simply delivered.</p>
+        </div>
+        <div>
+          <h4>Ship</h4>
+          <a>Express</a><a>Freight</a><a>eCommerce</a>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <a>About</a><a>Careers</a><a>Press</a>
+        </div>
+        <div>
+          <h4>Support</h4>
+          <a>Help center</a><a>Contact</a><a>Track</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© 2026 DHL — Demo landing page</span>
+        <span>Made with care for delivery</span>
+      </div>
+    </footer>
+   </div>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
