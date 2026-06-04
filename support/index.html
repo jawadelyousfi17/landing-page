@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Captix — Support</title>
+  <meta name="description" content="Get help with Captix. FAQs, contact, and support for AI video captions." />
+  <link rel="icon" type="image/png" href="../assets/logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../style.css" />
+  <style>
+    .support-main { position: relative; z-index: 1; max-width: 760px; margin: 0 auto; padding: 3rem 1.5rem 5rem; }
+    .support-hero { text-align: center; margin-bottom: 3.5rem; }
+    .support-hero img { width: 72px; height: 72px; border-radius: 18px; margin: 0 auto 1.4rem; box-shadow: 0 10px 40px rgba(37,216,238,.3); }
+    .support-hero h1 { font-size: clamp(2rem, 5vw, 2.8rem); letter-spacing: -.02em; font-weight: 800; }
+    .support-hero p { color: var(--muted); margin-top: .9rem; font-size: 1.1rem; }
+    .contact-card {
+      background: var(--bg-2); border: 1px solid var(--line); border-radius: 24px;
+      padding: 2.2rem; text-align: center; margin-bottom: 3.5rem;
+    }
+    .contact-card h2 { font-size: 1.4rem; font-weight: 800; }
+    .contact-card p { color: var(--muted); margin: .7rem auto 1.6rem; max-width: 28rem; }
+    .contact-email { font-weight: 700; }
+    .faq h2 { font-size: 1.6rem; font-weight: 800; margin-bottom: 1.5rem; text-align: center; }
+    details {
+      background: var(--surface); border: 1px solid var(--line); border-radius: 16px;
+      padding: 1.1rem 1.4rem; margin-bottom: .8rem; transition: border-color .2s;
+    }
+    details[open] { border-color: rgba(37,216,238,.35); }
+    summary {
+      cursor: pointer; font-weight: 700; font-size: 1.05rem; list-style: none;
+      display: flex; justify-content: space-between; align-items: center; gap: 1rem;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "+"; color: var(--cyan); font-size: 1.5rem; font-weight: 400; line-height: 1; }
+    details[open] summary::after { content: "–"; }
+    details p { color: var(--muted); margin-top: .9rem; font-size: .98rem; }
+    .back-link { display: inline-flex; align-items: center; gap: .4rem; color: var(--muted); font-weight: 600; margin-bottom: 2rem; transition: color .15s; }
+    .back-link:hover { color: var(--ink); }
+    .legal { text-align: center; color: var(--muted); font-size: .9rem; margin-top: 3rem; }
+    .legal a { color: var(--cyan); }
+  </style>
+</head>
+<body>
+  <div class="glow glow-1" aria-hidden="true"></div>
+  <div class="glow glow-2" aria-hidden="true"></div>
+
+  <header class="nav">
+    <a class="brand" href="../index.html">
+      <img src="../assets/logo.png" alt="Captix logo" class="brand-logo" />
+      <span class="brand-name">Captix</span>
+    </a>
+    <nav class="nav-links">
+      <a href="../index.html#features">Features</a>
+      <a href="../index.html#how">How it works</a>
+      <a href="./">Support</a>
+    </nav>
+    <a href="../index.html#download" class="btn btn-primary btn-sm">Download</a>
+  </header>
+
+  <main class="support-main">
+    <a href="../index.html" class="back-link">← Back to home</a>
+
+    <div class="support-hero">
+      <img src="../assets/logo.png" alt="Captix logo" />
+      <h1>Captix Support</h1>
+      <p>Questions, feedback, or a bug to report? We're here to help.</p>
+    </div>
+
+    <section class="contact-card">
+      <h2>Contact us</h2>
+      <p>Email our team and we'll get back to you within 1–2 business days.</p>
+      <a href="mailto:blacko.tv18@gmail.com?subject=Captix%20Support" class="btn btn-primary contact-email">blacko.tv18@gmail.com</a>
+    </section>
+
+    <section class="faq">
+      <h2>Frequently asked questions</h2>
+
+      <details open>
+        <summary>How do I add captions to my video?</summary>
+        <p>Import or record a video, and Captix automatically transcribes the audio word by word. Pick a style, tweak any words, then export — all in minutes.</p>
+      </details>
+
+      <details>
+        <summary>Which languages does Captix support?</summary>
+        <p>Captix transcribes and translates captions into 30+ languages, with first-class Arabic and full right-to-left (RTL) support.</p>
+      </details>
+
+      <details>
+        <summary>Can I translate my captions?</summary>
+        <p>Yes. Use the Translate tool in the editor to convert your captions into dozens of languages.</p>
+      </details>
+
+      <details>
+        <summary>What export quality is available?</summary>
+        <p>Captix burns captions directly into your video and exports crisp footage up to 4K, ready to share on Reels, TikTok, Shorts, and more.</p>
+      </details>
+
+      <details>
+        <summary>Can I customize the caption style?</summary>
+        <p>Absolutely. Control colors, outlines, shadows, backgrounds, size, spacing, alignment, and fonts — including premium Arabic typefaces — plus animated karaoke and word-by-word reveals.</p>
+      </details>
+
+      <details>
+        <summary>Can I add background music?</summary>
+        <p>Yes. Add and mix music tracks right inside the editor before you export.</p>
+      </details>
+
+      <details>
+        <summary>The transcription got a word wrong. Can I fix it?</summary>
+        <p>Yes. Tap any word on the timeline to edit the text or fine-tune its timing.</p>
+      </details>
+
+      <details>
+        <summary>How do I request a feature or report a bug?</summary>
+        <p>Email us at blacko.tv18@gmail.com with as much detail as possible — including your device model and iOS version for bug reports. We read every message.</p>
+      </details>
+    </section>
+
+    <p class="legal">
+      © 2026 Captix. All rights reserved. &nbsp;·&nbsp;
+      <a href="mailto:blacko.tv18@gmail.com?subject=Captix%20Support">Email support</a>
+    </p>
+  </main>
+</body>
+</html>
